@@ -37,7 +37,7 @@ footer {
 ul {
     display: flex;
     flex-direction: column;
-    display: none;
+/*    display: none;*/
 }
 
 li {
@@ -70,8 +70,12 @@ li {
     padding-bottom: 2rem;
 }
 
-#mobielnavul{
-/*    display: none;*/
+.mobielnavul{
+    display: none;
+}
+
+#mobielnavul li a:hover{
+    cursor: pointer;
 }
 
 #hamburgerknop {
@@ -188,3 +192,4 @@ li {
     }
 
 }
+
