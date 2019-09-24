@@ -1,0 +1,190 @@
+/*styles mobiel;*/
+@font-face {
+    font-family: "NPOSans";
+    src: url("../fonts/NPOSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NPOSans", sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.01rem;
+}
+
+header,
+main,
+footer {
+    background-color: #1F1F1F;
+    padding: 1rem 2rem;
+}
+
+header {
+
+}
+
+main {
+    font-size: 0.8rem;
+    overflow-x: hidden;
+}
+
+footer {
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+li {
+    list-style: none;
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.slider{
+    width: 103%;
+    height: auto;
+    padding-left: 2rem;
+    padding: 0.5rem 0rem;
+}
+
+#logo {
+    width: 3rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+#mobielnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+#mobielnavul{
+/*    display: none;*/
+}
+
+#hamburgerknop {
+    border-style: none;
+    background-color: #1F1F1F;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 1rem;
+}
+
+#nukijkenknop{
+    font-size: 1.4rem;
+    margin: 1rem 0rem 1rem 2rem;
+    padding: 0.6rem 1.6rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FF6D00;
+    display: none;
+}
+
+#searchfield{
+    font-size: 1.4rem;
+}
+
+.active {
+    display: block;
+}
+
+#spotlight{
+    padding-top: 0.5vw;
+    background-image:url(../images/FaroeBanner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vw;
+}
+
+#spotlightheader{
+    font-size: 1.5rem;
+    margin-top: 18%;
+    padding: 0rem 2rem;
+}
+
+#spotlighttext{
+    display: none;
+    font-size: 1.5rem;
+    margin: 1rem 0rem 1rem 2rem;
+    width: 50%;
+}
+
+/*styles desktop*/
+
+#desktopnav {
+    display: none;
+}
+
+#desktopnavul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+
+#desktopnavul li:hover{
+    border-bottom: solid 2px #FF6D00;
+}
+
+/*breaking point media queries*/
+@media screen and (min-width: 767px) {
+    #desktopnav{
+        display: block;
+    }
+
+    #mobielnav{
+        display: none;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #spotlightheader{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 998px) {
+    #spotlightheader{
+        font-size: 2.25rem;
+    }
+
+    #spotlighttext{
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    #nukijkenknop{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #spotlightheader{
+        font-size: 3rem;
+    }
+
+    #spotlighttext{
+        font-size: 1.4rem;
+    }
+
+}
