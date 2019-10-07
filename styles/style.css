@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "NPOSans";
+    src: url("../fonts/NPOSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NPOSans", sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.01rem;
+}
+
+/*styles mobiel;*/
+header,
+main,
+footer {
+    background-color: #1F1F1F;
+}
+
+main, footer{
+    padding: 1rem 5rem;
+}
+
+header {
+    padding: 1rem;
+}
+
+main {
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+footer {}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+li {
+    list-style: none;
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header a img {
+    width: 3rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+/*header nav:nth-child(2) */
+#mobielnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.mobielnavul {
+    display: none;
+}
+
+.mobielnavul li a:hover {
+    cursor: pointer;
+}
+
+#hamburgerknop {
+    border-style: none;
+    background-color: #1F1F1F;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 1rem;
+}
+
+#searchfield {
+    font-size: 1.4rem;
+}
+
+.active {
+    display: block;
+}
+
+#spotlight {
+    padding-top: 0.2vh;
+    padding-bottom: 8rem;
+    background-image: url(../images/FaroeBanner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50%;
+    text-shadow: 1px 4px 4px rgba(0,0,0,0.51);
+}
+
+#spotlightheader {
+    font-size: 1.5rem;
+    margin-top: 13%;
+    margin-left: 3rem;
+    padding: 0rem 2rem;
+}
+
+#spotlighttext {
+    display: none;
+    font-size: 1.5rem;
+    margin: 1rem 0rem 1rem 5rem;
+    width: 60%;
+}
+
+#nukijkenknop {
+    font-size: 1.4rem;
+    margin: 1rem 0rem 1rem 5rem;
+    padding: 0.6rem 1.6rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FF6D00;
+    display: none;
+    transition: padding 0.3s ease-out, font-size 0.3s ease-out;
+    position: absolute;
+}
+
+#nukijkenknop:hover{
+    padding: 0.8rem 1.8rem;
+    font-size: 1.6rem;
+
+}
+
+main div:not(:nth-child(4)) div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin: 1rem 0rem;
+}
+
+main div:not(:nth-child(4)) div::-webkit-scrollbar {
+  width: 0 !important }
+
+main div:not(:nth-child(4)) div figure{
+    margin-right: 0.3rem;
+}
+
+main div:not(:nth-child(4)) div figure img{
+    width: 10rem;
+    height: auto;
+    max-height: 100%;
+}
+
+main div:not(:nth-child(4)) div figure figcaption{
+    font-size: 1.1rem;
+}
+
+
+main div:nth-child(4) div {
+    display: grid;
+    grid-template-rows: 30vh 30vh;
+    grid-template-columns: 39vw 39vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 3rem;
+}
+
+main div:nth-child(4) div div:nth-child(1){
+    background-image: url(../images/Series.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+}
+
+main div:nth-child(4) div div:nth-child(2){
+    background-image: url(../images/Documantaires.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: auto;
+}
+
+main div:nth-child(4) div div:nth-child(3){
+    background-image: url(../images/Jeugd.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: auto;
+}
+
+main div:nth-child(4) div div:nth-child(4){
+    background-image: url(../images/films.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: auto;
+}
+
+main div:nth-child(4) div div:nth-child(5){
+    background-repeat: no-repeat;
+    display: none;
+}
+
+main div:nth-child(4) div div p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/*styles desktop*/
+/*#desktopnav */
+header nav:nth-child(1){
+    display: none;
+}
+
+header nav:nth-child(1) ul li a img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 0rem;
+}
+
+/*#desktopnavul */
+header nav:nth-child(1) ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75rem 0.5rem 0.2rem 0.5rem;
+}
+
+/*#desktopnavul*/
+header nav:nth-child(1) ul li:nth-child(0n2) a{
+   margin-bottom: 5px;
+}
+
+header nav:nth-child(1) ul li:not(:first-child) a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #FF6D00;
+    transition: width .3s;
+}
+
+header nav:nth-child(1) ul li a:hover:after {
+    width: 100%;
+}
+
+/*breaking point media queries*/
+@media screen and (min-width: 767px) {
+/*    #desktopnav*/
+    header nav:nth-child(1) {
+        display: block;
+    }
+
+    #mobielnav {
+        display: none;
+    }
+
+   header a img {
+        display: none;
+    }
+
+    #spotlightheader {
+        font-size: 2rem;
+    }
+
+    main div:not(:nth-child(4)) div figure img{
+    width: 20rem;
+    }
+
+    main div:not(:nth-child(4)) div figure figcaption{
+    font-size: 1.5rem;
+    }
+
+    main div:not(:nth-child(4)) div{
+    margin: 2rem 0rem;
+    }
+
+}
+
+@media screen and (min-width: 998px) {
+    #spotlightheader {
+        font-size: 2.25rem;
+    }
+
+    #spotlighttext {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    #nukijkenknop {
+        display: block;
+        text-decoration:
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #spotlightheader {
+        font-size: 3rem;
+    }
+
+    #spotlighttext {
+        font-size: 1.4rem;
+    }
+
+}
